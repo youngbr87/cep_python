@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de CEP</title>
+</head>
+<body>
+    <h1>Consulta de CEP</h1>
+    <form method="POST" action="/">
+        <label for="cep">Digite o CEP:</label>
+        <input type="text" id="cep" name="cep">
+        <button type="submit">Consultar</button>
+    </form>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
